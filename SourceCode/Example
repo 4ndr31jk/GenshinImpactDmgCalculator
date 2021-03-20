@@ -1,0 +1,9 @@
+
+        float base = 670;
+        float percentage = 57;
+        float flat = 296;
+        float ability = 58;
+        float bonus = 100;
+        float charlv = 80;
+        float lvmonster = 87;
+        float res = 80;

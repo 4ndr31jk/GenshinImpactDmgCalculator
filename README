@@ -1,1 +1,19 @@
-GenshinDMGCalculator is a tool for estimating damage it is not 100%accurate 
+The algorithm here estimate how much damage your enemy will take.
+
+How can i execute the code:
+enter the terminal and use the comand "java Main" and add  8 arguments: base atk,atk%,flat atk WITHOUT THE BASE ATK,ability (talent skill%) , bonus like elemental bonus or phisycal bonus, character lv, monster level and monster resistance 
+
+WARNING ARGUMENTS SHOULD BE ALL NUMBERS 
+
+How the code works?
+It uses a formula for etimating the output wich is:
+FINAL DMG = Initial DMG * %DEF Multiplier * %RES
+
+Initial dmg = atk * %ability *%bonus
+atk = base atk 	 * (1+%atk) + flat atk
+def multiplier = charlv +100 /monsterlv +200
+res is a constant that every monster has to a specific element or phisycal
+
+final dmg = (base atk *(1+%atk) + flat atk) * %ability * %bonus * (charlv + 100 / monsterlv + 200) + %RES
+
+
